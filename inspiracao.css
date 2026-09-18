@@ -1,0 +1,24 @@
+
+
+/* Estilização de citações em bloco */
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #F7F4D5;
+    border-left: 5px solid #D3968C; /* Cor de destaque Rosy Brown */
+    font-style: italic;
+    color: #0A3323;
+}
+
+cite {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #105666;
+}
+
+/* Destaque para nomes e termos históricos */
+strong {
+    color: #0A3323;
+}

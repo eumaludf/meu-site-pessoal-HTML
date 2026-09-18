@@ -1,0 +1,55 @@
+
+
+/* 1. Imagem de plano de fundo aplicada apenas na página index */
+body {
+    background-image: url("https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGxhbm8lMjBkZSUyMGZ1bmRvJTIwZmxvcnxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 2. Caixa translúcida nas seções para manter o texto legível sobre a foto */
+section {
+    background-color: rgba(255, 255, 255, 0.92); /* Branco com 92% de opacidade */
+    border-left: 6px solid #839958;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 3. Estilização da sua foto de perfil */
+img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 15px auto 25px auto;
+    padding: 6px;
+    background-color: #ffffff;
+    border: 3px solid #839958;
+}
+
+/* 4. Listas de interesses e formação */
+ul {
+    padding-left: 25px;
+    margin: 12px 0;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #0A3323;
+}
+
+/* 5. Botões de redes sociais */
+section a[target="_blank"] {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 6px 8px 6px 0;
+    background-color: #105666;
+    color: #F7F4D5;
+    text-decoration: none;
+    border: 1px solid #0A3323;
+}
+
+section a[target="_blank"]:hover {
+    background-color: #D3968C;
+    color: #0A3323;
+}

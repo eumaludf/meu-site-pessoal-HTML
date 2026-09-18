@@ -1,0 +1,25 @@
+
+
+/* Destaque temático para o texto principal do sonho */
+section {
+    background-color: #faf8e6;
+    border-left: 6px solid #105666;
+    padding: 24px;
+}
+
+strong {
+    color: #105666;
+}
+
+/* Estilização do link de retorno ao final do conteúdo */
+main > p > a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #0A3323;
+    font-weight: bold;
+}
+
+main > p > a:hover {
+    color: #D3968C;
+}

@@ -1,0 +1,21 @@
+
+
+/* Customização da tag mark presente no texto */
+mark {
+    background-color: #D3968C;
+    color: #0A3323;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+
+/* Estilo para listas ordenadas ou itens de álbuns/músicas */
+ol, ul {
+    background-color: #fcfbf2;
+    padding: 18px 30px;
+    border: 1px dashed #839958;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
