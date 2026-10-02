@@ -1,69 +1,71 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #F7F4D5; /* Bege de fundo */
-    color: #0A3323;            /* Texto principal em Dark Green */
+    background-color: #F7F4D5; 
+    color: #0A3323;           
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
 
-/* --- Cabeçalho e Título Principal (Seletor por ID e Elemento) --- */
-#topo {
-    margin: 0;
-    padding: 10px 0;
-    font-size: 2rem;
-    color: #F7F4D5;
-}
-
 header {
     background-color: #0A3323;
-    padding: 25px 20px;
+    padding: 20px 15px;
     text-align: center;
     border-bottom: 4px solid #839958;
 }
 
-header h1 {
+header h1, #topo {
     margin: 0 0 15px 0;
     color: #F7F4D5;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
 }
 
 nav {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 0 auto;
 }
 
 nav a {
-    display: inline-block;
+    display: block;
     color: #F7F4D5;
     text-decoration: none;
-    padding: 8px 16px;
-    margin: 4px 6px;
-    background-color: #105666; /* Midnight Green */
+    padding: 10px 14px;
+    background-color: #105666;
     border: 1px solid #839958;
     font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
 }
 
-/* Interatividade :hover funcional no menu */
 nav a:hover {
     background-color: #D3968C; 
     color: #0A3323;
     border-color: #0A3323;
 }
 
-/* --- Estrutura de Conteúdo Principal --- */
 main {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 0 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
 section {
-    margin-bottom: 28px;
-    padding: 20px;
+    margin-bottom: 24px;
+    padding: 18px;
     background-color: #ffffff;
     border-left: 6px solid #839958;
+    border-radius: 4px;
 }
 
 h2 {
@@ -71,9 +73,9 @@ h2 {
     margin-top: 0;
     border-bottom: 2px solid #839958;
     padding-bottom: 6px;
+    font-size: 1.4rem;
 }
 
-/* --- Links Gerais --- */
 a {
     color: #105666;
     font-weight: 600;
@@ -92,6 +94,7 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
     border: 2px solid #0A3323;
+    border-radius: 4px;
 }
 
 .btn-topo:hover {
@@ -100,7 +103,6 @@ a:hover {
     border-color: #D3968C;
 }
 
-/* --- Rodapé --- */
 footer {
     background-color: #0A3323;
     color: #F7F4D5;
@@ -113,4 +115,48 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.95rem;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    margin: 15px auto;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    header h1, #topo {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 8px 16px;
+    }
+
+    main {
+        margin: 35px auto;
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 24px;
+    }
 }
