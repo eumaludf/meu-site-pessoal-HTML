@@ -1,6 +1,5 @@
 
 
-/* Destaque temático para o texto principal do sonho */
 section {
     background-color: #faf8e6;
     border-left: 6px solid #105666;
@@ -11,7 +10,6 @@ strong {
     color: #105666;
 }
 
-/* Estilização do link de retorno ao final do conteúdo */
 main > p > a {
     display: inline-block;
     margin-top: 15px;
