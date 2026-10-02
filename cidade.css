@@ -1,23 +1,26 @@
 
 
-/* Destaque para dados históricos */
 section p {
     text-align: justify;
     margin-bottom: 14px;
 }
 
-/* Estilização e responsividade da moldura do Google Maps */
 iframe {
-    display: block;
     width: 100%;
-    max-width: 650px;
+    max-width: 100%;
+    height: 350px; 
+    border: 3px solid #839958;
+    border-radius: 6px;
+    display: block;
     margin: 20px auto;
-    border: 4px solid #839958;
-    padding: 4px;
-    background-color: #ffffff;
 }
 
-/* Seção de pontos turísticos ou informações extras */
+@media (min-width: 768px) {
+    iframe {
+        height: 450px;
+    }
+}
+
 h3 {
     color: #105666;
     margin-top: 18px;
